@@ -1,0 +1,143 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "La Belle Énergie",
+        "description": "Saisissez les identifiants de votre espace client espace-client.labellenergie.fr.",
+        "data": {
+          "email": "Adresse e-mail",
+          "password": "Mot de passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnexion à La Belle Énergie",
+        "description": "Le mot de passe du compte {email} n'est plus valide. Saisissez le nouveau mot de passe.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou mot de passe incorrect.",
+      "cannot_connect": "Impossible de joindre l'espace client La Belle Énergie.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré.",
+      "reauth_successful": "Mot de passe mis à jour."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "abonnement": {
+        "name": "Abonnement mensuel TTC"
+      },
+      "prix_hc": {
+        "name": "Prix du kWh heures creuses TTC"
+      },
+      "prix_hp": {
+        "name": "Prix du kWh heures pleines TTC"
+      },
+      "prix_base": {
+        "name": "Prix du kWh base TTC"
+      },
+      "plages_hc": {
+        "name": "Plages d'heures creuses"
+      },
+      "puissance": {
+        "name": "Puissance souscrite"
+      },
+      "derniere_modification": {
+        "name": "Dernière modification de l'offre"
+      },
+      "numero_pdl": {
+        "name": "Numéro de point de livraison"
+      },
+      "adresse": {
+        "name": "Adresse"
+      },
+      "prix_actuel": {
+        "name": "Prix actuel du kWh"
+      },
+      "total_ttc": {
+        "name": "Facture mensuelle TTC"
+      },
+      "cumulative_total_ttc": {
+        "name": "Total payé TTC (cumul)"
+      },
+      "total_annee_passee": {
+        "name": "Total année passée TTC"
+      },
+      "total_annee_en_cours": {
+        "name": "Total année en cours TTC"
+      },
+      "total_annee_glissante": {
+        "name": "Total 12 derniers mois TTC"
+      },
+      "conso_mois_hp": {
+        "name": "Consommation HP du mois"
+      },
+      "conso_mois_hc": {
+        "name": "Consommation HC du mois"
+      },
+      "conso_mois_total": {
+        "name": "Consommation du mois"
+      },
+      "conso_mois_precedent_hp": {
+        "name": "Consommation HP du mois précédent"
+      },
+      "conso_mois_precedent_hc": {
+        "name": "Consommation HC du mois précédent"
+      },
+      "conso_mois_precedent_total": {
+        "name": "Consommation du mois précédent"
+      },
+      "conso_dernier_jour_hp": {
+        "name": "Consommation HP du dernier jour"
+      },
+      "conso_dernier_jour_hc": {
+        "name": "Consommation HC du dernier jour"
+      },
+      "conso_dernier_jour_total": {
+        "name": "Consommation du dernier jour"
+      },
+      "part_hc_mois": {
+        "name": "Part des heures creuses du mois"
+      },
+      "temperature_mois": {
+        "name": "Température moyenne du mois"
+      },
+      "nom_offre": {
+        "name": "Offre"
+      },
+      "cout_mois": {
+        "name": "Coût du mois"
+      },
+      "cout_mois_precedent": {
+        "name": "Coût du mois précédent"
+      },
+      "cout_dernier_jour": {
+        "name": "Coût du dernier jour"
+      },
+      "historique_conso": {
+        "name": "Consommation des 12 derniers mois (historique)"
+      },
+      "historique_factures": {
+        "name": "Historique des factures"
+      }
+    },
+    "binary_sensor": {
+      "heure_creuse": {
+        "name": "Heure creuse en cours"
+      },
+      "changement_tarif": {
+        "name": "Changement de tarif annoncé"
+      }
+    },
+    "calendar": {
+      "calendrier_hc": {
+        "name": "Calendrier des heures creuses"
+      }
+    }
+  }
+}

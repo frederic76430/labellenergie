@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43a047"/>
+      <stop offset="1" stop-color="#1b5e20"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#fond)"/>
+  <!-- lune (heures creuses) -->
+  <path d="M188 58a44 44 0 1 0 22 82a36 36 0 1 1-22-82z" fill="#fff" opacity=".28"/>
+  <!-- éclair -->
+  <path d="M142 34 70 144h50l-14 78 80-118h-52z" fill="#ffd54f" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+</svg>

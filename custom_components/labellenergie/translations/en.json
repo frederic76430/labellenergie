@@ -1,0 +1,143 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "La Belle Énergie",
+        "description": "Enter your espace-client.labellenergie.fr credentials.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect to La Belle Énergie",
+        "description": "The password for {email} is no longer valid. Enter the new password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Incorrect email or password.",
+      "cannot_connect": "Unable to reach the La Belle Énergie customer portal.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Password updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "abonnement": {
+        "name": "Monthly subscription (incl. tax)"
+      },
+      "prix_hc": {
+        "name": "Off-peak kWh price (incl. tax)"
+      },
+      "prix_hp": {
+        "name": "Peak kWh price (incl. tax)"
+      },
+      "prix_base": {
+        "name": "Base kWh price (incl. tax)"
+      },
+      "plages_hc": {
+        "name": "Off-peak hours"
+      },
+      "puissance": {
+        "name": "Subscribed power"
+      },
+      "derniere_modification": {
+        "name": "Offer last changed"
+      },
+      "prix_actuel": {
+        "name": "Current kWh price"
+      },
+      "numero_pdl": {
+        "name": "Delivery point number"
+      },
+      "adresse": {
+        "name": "Address"
+      },
+      "total_ttc": {
+        "name": "Monthly bill (incl. tax)"
+      },
+      "cumulative_total_ttc": {
+        "name": "Total paid (incl. tax, cumulative)"
+      },
+      "total_annee_passee": {
+        "name": "Last year total (incl. tax)"
+      },
+      "total_annee_en_cours": {
+        "name": "Current year total (incl. tax)"
+      },
+      "total_annee_glissante": {
+        "name": "Last 12 months total (incl. tax)"
+      },
+      "conso_mois_hp": {
+        "name": "Peak consumption this month"
+      },
+      "conso_mois_hc": {
+        "name": "Off-peak consumption this month"
+      },
+      "conso_mois_total": {
+        "name": "Consumption this month"
+      },
+      "conso_mois_precedent_hp": {
+        "name": "Peak consumption last month"
+      },
+      "conso_mois_precedent_hc": {
+        "name": "Off-peak consumption last month"
+      },
+      "conso_mois_precedent_total": {
+        "name": "Consumption last month"
+      },
+      "conso_dernier_jour_hp": {
+        "name": "Peak consumption last day"
+      },
+      "conso_dernier_jour_hc": {
+        "name": "Off-peak consumption last day"
+      },
+      "conso_dernier_jour_total": {
+        "name": "Consumption last day"
+      },
+      "part_hc_mois": {
+        "name": "Off-peak share this month"
+      },
+      "temperature_mois": {
+        "name": "Average temperature this month"
+      },
+      "nom_offre": {
+        "name": "Offer"
+      },
+      "cout_mois": {
+        "name": "Cost this month"
+      },
+      "cout_mois_precedent": {
+        "name": "Cost last month"
+      },
+      "cout_dernier_jour": {
+        "name": "Cost last day"
+      },
+      "historique_conso": {
+        "name": "Consumption last 12 months (history)"
+      },
+      "historique_factures": {
+        "name": "Invoice history"
+      }
+    },
+    "binary_sensor": {
+      "heure_creuse": {
+        "name": "Heure creuse en cours"
+      },
+      "changement_tarif": {
+        "name": "Price change announced"
+      }
+    },
+    "calendar": {
+      "calendrier_hc": {
+        "name": "Calendrier des heures creuses"
+      }
+    }
+  }
+}
