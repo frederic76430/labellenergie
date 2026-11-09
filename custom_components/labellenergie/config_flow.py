@@ -6,11 +6,12 @@ import logging
 from collections.abc import Mapping
 from typing import Any
 
+import aiohttp
 import voluptuous as vol
 
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 from homeassistant.const import CONF_EMAIL, CONF_PASSWORD
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers.aiohttp_client import async_create_clientsession
 from homeassistant.helpers.selector import (
     TextSelector,
     TextSelectorConfig,
@@ -33,7 +34,9 @@ class LabellenergieConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def _async_valider(self, email: str, password: str) -> str | None:
         """Teste la connexion ; retourne la clé d'erreur ou None si tout va bien."""
-        client = LabellenergieClient(async_get_clientsession(self.hass), email, password)
+        # Session dédiée à ce test de connexion (pas la session partagée de Home Assistant)
+        session = async_create_clientsession(self.hass, cookie_jar=aiohttp.DummyCookieJar())
+        client = LabellenergieClient(session, email, password)
         try:
             await client.async_login()
         except AuthError:
